@@ -162,7 +162,7 @@
         const run = async () => {
             const text = '忙碌的工作放一放，烦心的事情讲一讲，洁白的牙齿亮一亮，动听的歌曲唱一唱，快乐的心情想一想，祝燕姐，天天甜甜，健康万年，生日快乐'.split('，')
             for (let i = 0; i < text.length; i++) {
-                await awaitSendText(text[i], 35, i === 0 ? 100 : 40)
+                await awaitSendText(text[i], 45, i === 0 ? 100 : 40)
                 if (i === text.length - 2) {
                     let bxImg = document.querySelector('#bx-img')
                     bxImg.style.visibility = 'visible'
